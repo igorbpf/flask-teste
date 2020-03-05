@@ -5,16 +5,16 @@ from flask_admin import Admin
 from flask_admin.contrib.sqla import ModelView
 
 
-# Criando aplicação
+# Criando aplicacao
 app = Flask(__name__)
 
-# Setando algumas configurações da aplicação
+# Setando algumas configuracoes da aplicacao
 app.config['SECRET_KEY'] = 'super_secret' 
 app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://postgres:lulalivre@localhost:5432/flask_db'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 app.config['FLASK_ADMIN_SWATCH'] = 'cerulean'
 
-# Configurando as extensões
+# Configurando as extensoes
 admin = Admin(app, name="flask-teste", template_mode="bootstrap3")
 CORS(app)
 db = SQLAlchemy(app)
