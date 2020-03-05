@@ -1,0 +1,17 @@
+Executar os seguintes comandos para criar um database no postgres que está dentro do container docker.
+
+Comando 1:
+docker exec -it container-db bash
+O comando faz com que o usuario entre no mode interativo do container com nome de container-db executando o bash. É possível reparar que o prompt mudará os nomes de usuário e computador.
+
+Comando 2:
+su postgres
+Este comando vai mudar de usuário root para usuário postgres. É possivel reparar que o prompt mudará novament.
+
+Comando 3:
+psql
+Este comando vai fazer com que você entre no prompt interativo do postgres. É algo semelhante ao conecta_impala.
+
+Comando 4:
+create database flask_db;
+Este comando cria um database chamado flask_db dentro do postgres. Não se esquecer do ponto e vírgula no final! Obs: O nome do banco precisa ser igual ao nome que está descrito ao final da database_uri definada em app.py

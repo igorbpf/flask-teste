@@ -1,0 +1,7 @@
+\l lista os bancos dados dentro do postgres. Equivalente ao "show databases" do mysql.
+\c nome_banco --> conecta-se ao banco escolhido. Equivalente ao "use nome_banco" do mysql.
+\dt --> mostra tabelas no banco escolhido. Equivalente ao "show tables" do mysql.
+\dt+ -->  mostra tabelas no banco escolhido com mais detalhes.
+\d nome_tabela --> descreve a tabela. Equivalante ao "describe nome_tabela" do mysql.
+\d+ nome_tabela --> descreve a tabela com mais detalhes.
+\q --> sai do modo interativo. Equivalente ao quit ou exit.
